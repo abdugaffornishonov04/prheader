@@ -3,6 +3,7 @@ import { Fragment, useState } from "react";
 const Header = () => {
   const [language, setLanguage] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [headerResListShow, setheaderResListShow] = useState(false);
 
   const changeLanguage = () => {
     setIsLoading(true);
@@ -11,6 +12,14 @@ const Header = () => {
       setIsLoading(false);
     }, 3000);
   };
+
+  const openHeaderResponsiveList = () => {
+    setheaderResListShow((isTrue) => !isTrue);
+  };
+
+  const closeHeaderResList = () => {
+    setheaderResListShow(false)
+  }
 
   return (
     <Fragment>
@@ -33,7 +42,13 @@ const Header = () => {
               <a href="#">{language ? "Контакты" : "Bog'lanish"}</a>
             </li>
           </ul>
-          <ul className="header-list-on-responsive">
+          <ul
+            className={
+              headerResListShow
+                ? "header-list-on-responsive"
+                : "header-list-on-responsive-false"
+            }
+          >
             <div className="hor-wrapper">
               <li>
                 <a href="#">{language ? "О нас" : "Biz haqimizda"}</a>
@@ -64,7 +79,7 @@ const Header = () => {
                 {language ? "Языки" : "Tillar"}
               </div>
 
-              <button className="hor-close-button">
+              <button onClick={closeHeaderResList} className="hor-close-button">
                 <img src="/public/close.png" alt="close" />
               </button>
             </div>
@@ -86,7 +101,7 @@ const Header = () => {
           </div>
         </nav>
 
-        <button className="header-hamburger">
+        <button onClick={openHeaderResponsiveList} className="header-hamburger">
           <img src="/public/menu.png" alt="menu" />
         </button>
       </header>
@@ -97,9 +112,6 @@ const Header = () => {
           alt="loader image"
         />
       </div>
-
-                  
-
     </Fragment>
   );
 };

@@ -58,13 +58,13 @@
     }
 
     .header-list-on-responsive {
-      display: none;
+      display: flex;
       position: fixed;
       background-color: #000;
-      width: 70%;
+      width: 80%;
       height: 100vh;
       top: 0;
-      right: 30%;
+      right: 20%;
 
       @media(max-width:900px) {
         display: flex;
@@ -188,6 +188,10 @@
   }
 }
 
+.header-list-on-responsive-false {
+  display: none !important;
+}
+
 .loading-true {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
@@ -195,7 +199,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 10001;
 
