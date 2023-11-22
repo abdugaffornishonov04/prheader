@@ -249,6 +249,12 @@
   justify-content: space-between;
   align-items: center;
   background-color: #1e232f;
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  background-color:#000;
+  z-index: 10005;
 
 
 
@@ -373,19 +379,72 @@
       margin-left: 50px;
       display: flex;
       align-items: center;
-      gap: 15px;
 
       @media(max-width:900px) {
         display: none;
       }
 
       .header-make-call {
+        transition: 0.1s ease;
+        position: relative;
+        padding-right: 4px;
+        padding-left: 4px;
+        padding-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 4px solid transparent;
+        transition: 0.4s ease-in-out;
+
+        &:hover {
+          border-bottom: 4px solid #08f9ff;
+        }
+
+
+        &:hover::after {
+          content: "";
+          width: 100%;
+          background: linear-gradient(0deg, #08f9ff33, transparent);
+          height: 150%;
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          transition: 0.9s ease-in-out;
+        }
+
         img {
           height: 32px;
         }
       }
 
       .header-languages-dropdown {
+        transition: 0.1s ease;
+        position: relative;
+        padding-right: 4px;
+        padding-left: 4px;
+        padding-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-bottom: 4px solid transparent;
+
+        &:hover {
+          border-bottom: 4px solid #08f9ff;
+        }
+
+
+        &:hover::after {
+          content: "";
+          width: 100%;
+          background: linear-gradient(0deg, #08f9ff33, transparent);
+          height: 150%;
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          transition: 0.5s ease-in-out;
+        }
+
         button {
           background-color: transparent;
           border: none;
@@ -429,7 +488,7 @@
   justify-content: center;
   position: fixed;
   top: 0;
-  z-index: 10001;
+  z-index: 10006;
 
   img {
     // margin-top: 15%;

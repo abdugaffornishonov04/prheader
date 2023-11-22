@@ -11,6 +11,12 @@
   justify-content: space-between;
   align-items: center;
   background-color: #1e232f;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #000;
+  z-index: 10005;
 }
 .header .header-logo {
   font-size: 35px;
@@ -116,15 +122,64 @@
   margin-left: 50px;
   display: flex;
   align-items: center;
-  gap: 15px;
 }
 @media (max-width: 900px) {
   .header nav .header-end-wrapper {
     display: none;
   }
 }
+.header nav .header-end-wrapper .header-make-call {
+  transition: 0.1s ease;
+  position: relative;
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 4px solid transparent;
+  transition: 0.4s ease-in-out;
+}
+.header nav .header-end-wrapper .header-make-call:hover {
+  border-bottom: 4px solid #08f9ff;
+}
+.header nav .header-end-wrapper .header-make-call:hover::after {
+  content: "";
+  width: 100%;
+  background: linear-gradient(0deg, rgba(8, 249, 255, 0.2), transparent);
+  height: 150%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.9s ease-in-out;
+}
 .header nav .header-end-wrapper .header-make-call img {
   height: 32px;
+}
+.header nav .header-end-wrapper .header-languages-dropdown {
+  transition: 0.1s ease;
+  position: relative;
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-bottom: 4px solid transparent;
+}
+.header nav .header-end-wrapper .header-languages-dropdown:hover {
+  border-bottom: 4px solid #08f9ff;
+}
+.header nav .header-end-wrapper .header-languages-dropdown:hover::after {
+  content: "";
+  width: 100%;
+  background: linear-gradient(0deg, rgba(8, 249, 255, 0.2), transparent);
+  height: 150%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.5s ease-in-out;
 }
 .header nav .header-end-wrapper .header-languages-dropdown button {
   background-color: transparent;
@@ -163,7 +218,7 @@
   justify-content: center;
   position: fixed;
   top: 0;
-  z-index: 10001;
+  z-index: 10006;
 }
 .loading-true img {
   width: 70px;
