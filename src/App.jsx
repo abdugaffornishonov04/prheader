@@ -5,7 +5,7 @@ function App() {
   return (
     <Fragment>
       <Header />
-      <p>
+      <p style={{color:"#fff", opacity:"0.8"}}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
         tempora quaerat odio eius harum architecto numquam, quasi, ullam eveniet
         quod sapiente repudiandae, autem magnam odit consequatur amet minus!
