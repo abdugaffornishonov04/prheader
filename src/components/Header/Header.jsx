@@ -64,14 +64,14 @@ const Header = () => {
               </li>
 
               <a href="tel:+998555187007" className="header-make-call">
-                <img src="/public/phone-call.png" alt="call" />
+                <img src="/phone-call.png" alt="call" />
                 {language ? "Позвони мне" : "Telefon qiling"}
               </a>
               <div className="header-languages-dropdown">
                 <button onClick={changeLanguage}>
                   <img
                     src={
-                      language ? "/public/uzbekistan.png" : "/public/russia.png"
+                      language ? "/uzbekistan.png" : "/russia.png"
                     }
                     alt=""
                   />
@@ -80,19 +80,19 @@ const Header = () => {
               </div>
 
               <button onClick={closeHeaderResList} className="hor-close-button">
-                <img src="/public/close.png" alt="close" />
+                <img src="/close.png" alt="close" />
               </button>
             </div>
           </ul>
           <div className="header-end-wrapper">
             <a href="tel:+998555187007" className="header-make-call">
-              <img src="/public/phone-call.png" alt="call" />
+              <img src="/phone-call.png" alt="call" />
             </a>
             <div className="header-languages-dropdown">
               <button onClick={changeLanguage}>
                 <img
                   src={
-                    language ? "/public/uzbekistan.png" : "/public/russia.png"
+                    language ? "/uzbekistan.png" : "/russia.png"
                   }
                   alt=""
                 />
@@ -102,13 +102,13 @@ const Header = () => {
         </nav>
 
         <button onClick={openHeaderResponsiveList} className="header-hamburger">
-          <img src="/public/menu.png" alt="menu" />
+          <img src="/menu.png" alt="menu" />
         </button>
       </header>
 
       <div className={isLoading ? "loading-true" : "loading-false"}>
         <img
-          src={language ? "/public/uzbekistan.png" : "/public/russia.png"}
+          src={language ? "/uzbekistan.png" : "/russia.png"}
           alt="loader image"
         />
       </div>
@@ -117,3 +117,5 @@ const Header = () => {
 };
 
 export default Header;
+
+// image direction changed
