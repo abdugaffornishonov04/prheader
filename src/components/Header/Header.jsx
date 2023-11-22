@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 const Header = () => {
   const [language, setLanguage] = useState(false);
@@ -18,8 +18,33 @@ const Header = () => {
   };
 
   const closeHeaderResList = () => {
-    setheaderResListShow(false)
-  }
+    setheaderResListShow(false);
+  };
+
+
+   useEffect(() => {
+     const allAnchorTags = document.querySelectorAll(".header-list li a");
+
+     const handleClick = (clickedElement) => {
+       clickedElement.classList.add("a-style");
+
+       allAnchorTags.forEach((el) => {
+         if (el !== clickedElement) {
+           el.classList.remove("a-style");
+         }
+       });
+     };
+
+     allAnchorTags.forEach((el) => {
+       el.addEventListener("click", () => handleClick(el));
+     });
+
+     return () => {
+       allAnchorTags.forEach((el) => {
+         el.removeEventListener("click", () => handleClick(el));
+       });
+     };
+   }, []); 
 
   return (
     <Fragment>
@@ -70,9 +95,7 @@ const Header = () => {
               <div className="header-languages-dropdown">
                 <button onClick={changeLanguage}>
                   <img
-                    src={
-                      language ? "/uzbekistan.png" : "/russia.png"
-                    }
+                    src={language ? "/uzbekistan.png" : "/russia.png"}
                     alt=""
                   />
                 </button>
@@ -91,9 +114,7 @@ const Header = () => {
             <div className="header-languages-dropdown">
               <button onClick={changeLanguage}>
                 <img
-                  src={
-                    language ? "/uzbekistan.png" : "/russia.png"
-                  }
+                  src={language ? "/uzbekistan.png" : "/russia.png"}
                   alt=""
                 />
               </button>
