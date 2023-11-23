@@ -122,7 +122,7 @@ const Header = () => {
               className="header-languages-dropdown"
             >
               <p>{language ? "Язык" : "Tillar"}</p>
-              <img src="/public/world.png" alt="" />
+              <img src="/world.png" alt="" />
 
               <div
                 className={
