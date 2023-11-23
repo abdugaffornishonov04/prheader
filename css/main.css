@@ -41,7 +41,7 @@
 .header nav .header-list li a {
   font-size: 20px;
   color: #fff;
-  font-family: "Poppins";
+  font-family: "Poppins", "Overpass";
   position: relative;
   padding-top: 10px;
   padding-left: 15px;
@@ -166,10 +166,10 @@
 }
 .header nav .header-end-wrapper .header-make-call p {
   margin-top: 6px;
-  font-size: 20px;
-  font-family: "Poppins";
+  font-size: 16px;
+  font-family: "Poppins", "Overpass";
   color: #fff;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .header nav .header-end-wrapper .header-make-call:hover {
   border-bottom: 4px solid #2A4594;
@@ -202,7 +202,7 @@
 .header nav .header-end-wrapper .header-languages-dropdown p {
   font-size: 17px;
   color: #fff;
-  font-family: "Poppins";
+  font-family: "Poppins", "Overpass";
 }
 .header nav .header-end-wrapper .header-languages-dropdown img {
   width: 30px;

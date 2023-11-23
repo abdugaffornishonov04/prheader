@@ -15,6 +15,13 @@ const Header = () => {
     }, 3000);
   };
 
+  const changeLanguageRussian = () => {
+    setLanguage(true);
+  };
+  const changeLanguageUzbek = () => {
+    setLanguage(false);
+  };
+
   const openHeaderResponsiveList = () => {
     setheaderResListShow((isTrue) => !isTrue);
   };
@@ -130,13 +137,16 @@ const Header = () => {
                 }
               >
                 <button
-                  onClick={changeLanguage}
+                  onClick={changeLanguageRussian}
                   className="hld-dropdown-russian"
                 >
                   <p>Russian</p>
                   <img src="/russia.png" alt="" />
                 </button>
-                <button onClick={changeLanguage} className="hld-dropdown-uzbek">
+                <button
+                  onClick={changeLanguageUzbek}
+                  className="hld-dropdown-uzbek"
+                >
                   <p>Uzbek</p>
                   <img src="/uzbekistan.png" alt="" />
                 </button>

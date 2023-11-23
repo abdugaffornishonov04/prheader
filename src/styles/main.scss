@@ -284,7 +284,7 @@
         a {
           font-size: 20px;
           color: #fff;
-          font-family: "Poppins";
+          font-family: "Poppins", "Overpass";
           position: relative;
           padding-top: 10px;
           padding-left: 15px;
@@ -427,10 +427,10 @@
 
         p {
           margin-top: 6px;
-          font-size: 20px;
-          font-family: "Poppins";
+          font-size: 16px;
+          font-family: "Poppins", "Overpass";
           color: #fff;
-          opacity: 0.8;
+          opacity: 0.9;
         }
 
         &:hover {
@@ -470,7 +470,7 @@
         p {
           font-size: 17px;
           color: #fff;
-          font-family: "Poppins";
+          font-family: "Poppins", "Overpass";
         }
 
         img {
@@ -504,7 +504,7 @@
           }
         }
 
-        .hld-dropdown-none{
+        .hld-dropdown-none {
           display: none;
         }
 
