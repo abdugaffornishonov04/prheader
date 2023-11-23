@@ -4,8 +4,10 @@ const Header = () => {
   const [language, setLanguage] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [headerResListShow, setheaderResListShow] = useState(false);
+  const [languageDropDown, setLanguageDropDown] = useState(false);
 
-  const changeLanguage = () => {
+  const changeLanguage = (e) => {
+    console.log(e);
     setIsLoading(true);
     setTimeout(() => {
       setLanguage((isTrue) => !isTrue);
@@ -21,36 +23,39 @@ const Header = () => {
     setheaderResListShow(false);
   };
 
+  useEffect(() => {
+    const allAnchorTags = document.querySelectorAll(".header-list li a");
 
-   useEffect(() => {
-     const allAnchorTags = document.querySelectorAll(".header-list li a");
+    const handleClick = (clickedElement) => {
+      clickedElement.classList.add("a-style");
 
-     const handleClick = (clickedElement) => {
-       clickedElement.classList.add("a-style");
+      allAnchorTags.forEach((el) => {
+        if (el !== clickedElement) {
+          el.classList.remove("a-style");
+        }
+      });
+    };
 
-       allAnchorTags.forEach((el) => {
-         if (el !== clickedElement) {
-           el.classList.remove("a-style");
-         }
-       });
-     };
+    allAnchorTags.forEach((el) => {
+      el.addEventListener("click", () => handleClick(el));
+    });
 
-     allAnchorTags.forEach((el) => {
-       el.addEventListener("click", () => handleClick(el));
-     });
+    return () => {
+      allAnchorTags.forEach((el) => {
+        el.removeEventListener("click", () => handleClick(el));
+      });
+    };
+  }, []);
 
-     return () => {
-       allAnchorTags.forEach((el) => {
-         el.removeEventListener("click", () => handleClick(el));
-       });
-     };
-   }, []); 
+  const showLangDropDown = () => {
+    setLanguageDropDown((isTrue) => !isTrue);
+  };
 
   return (
     <Fragment>
       <header className="header">
         <a href="/" className="header-logo">
-          Logo
+          <img src="/mainlogo.png" alt="" />
         </a>
         <nav>
           <ul className="header-list">
@@ -109,15 +114,33 @@ const Header = () => {
           </ul>
           <div className="header-end-wrapper">
             <a href="tel:+998555187007" className="header-make-call">
-              <img src="/phone-call.png" alt="call" />
+              <p>+998555187007</p>
+              <img src="/header-phonecch.png" alt="call" />
             </a>
-            <div className="header-languages-dropdown">
-              <button onClick={changeLanguage}>
-                <img
-                  src={language ? "/uzbekistan.png" : "/russia.png"}
-                  alt=""
-                />
-              </button>
+            <div
+              onClick={showLangDropDown}
+              className="header-languages-dropdown"
+            >
+              <p>{language ? "Язык" : "Tillar"}</p>
+              <img src="/public/world.png" alt="" />
+
+              <div
+                className={
+                  languageDropDown ? "hld-dropdown-shown" : "hld-dropdown-none"
+                }
+              >
+                <button
+                  onClick={changeLanguage}
+                  className="hld-dropdown-russian"
+                >
+                  <p>Russian</p>
+                  <img src="/russia.png" alt="" />
+                </button>
+                <button onClick={changeLanguage} className="hld-dropdown-uzbek">
+                  <p>Uzbek</p>
+                  <img src="/uzbekistan.png" alt="" />
+                </button>
+              </div>
             </div>
           </div>
         </nav>
@@ -140,3 +163,4 @@ const Header = () => {
 export default Header;
 
 // image direction changed
+// on my way to make languages select
