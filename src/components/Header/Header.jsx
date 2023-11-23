@@ -16,10 +16,18 @@ const Header = () => {
   };
 
   const changeLanguageRussian = () => {
-    setLanguage(true);
+    setIsLoading(true);
+    setTimeout(() => {
+      setLanguage(true);
+      setIsLoading(false);
+    }, 2000);
   };
   const changeLanguageUzbek = () => {
-    setLanguage(false);
+    setIsLoading(true);
+    setTimeout(() => {
+      setLanguage(false);
+      setIsLoading(false);
+    }, 2000);
   };
 
   const openHeaderResponsiveList = () => {
