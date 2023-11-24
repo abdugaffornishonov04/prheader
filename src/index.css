@@ -10,3 +10,9 @@ body{
   background-color: #000;
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial,;
 }
+
+.container{
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;  
+}

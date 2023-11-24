@@ -2,6 +2,105 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+.message-me-wrapper {
+  position: fixed;
+  background-color: transparent;
+  z-index: 10007;
+  bottom: 42px;
+  right: 30px;
+  display: flex;
+}
+.message-me-wrapper .message-me-button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.message-me-wrapper .message-me-content-true {
+  position: fixed;
+  width: 350px;
+  height: 500px;
+  background-color: #181D27;
+  bottom: 95px;
+  right: 54px;
+}
+.message-me-wrapper .message-me-content-true .mmc-profile {
+  background-color: #1f2739;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.message-me-wrapper .message-me-content-true .mmc-profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.message-me-wrapper .message-me-content-true .mmc-profile .mmc-profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.message-me-wrapper .message-me-content-true .mmc-profile .mmc-profile-info p {
+  color: #fff;
+  font-family: "Poppins";
+}
+.message-me-wrapper .message-me-content-true .mmc-profile .mmc-profile-info span {
+  margin-left: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  font-family: "Inter";
+  position: relative;
+}
+.message-me-wrapper .message-me-content-true .mmc-profile .mmc-profile-info span::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 202, 0);
+  position: absolute;
+  border-radius: 50%;
+  left: -15px;
+  top: 3px;
+}
+.message-me-wrapper .message-me-content-true .mmc-messages-in .mmcmi-first-message {
+  background-color: #364362;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  position: relative;
+}
+.message-me-wrapper .message-me-content-true .mmc-messages-in .mmcmi-first-message p {
+  color: #fff;
+  font-family: "Overpass";
+  opacity: 0.9;
+}
+.message-me-wrapper .message-me-content-true .mmc-messages-in .mmcmi-second-message {
+  background-color: #364362;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  position: relative;
+}
+.message-me-wrapper .message-me-content-true .mmc-messages-in .mmcmi-second-message p {
+  color: #fff;
+  font-family: "Overpass";
+  opacity: 0.9;
+}
+
+.message-me-content-false {
+  display: none;
+}
+
 .header {
   padding-left: 20px;
   padding-right: 20px;
