@@ -121,12 +121,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #181D27;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 225;
+  box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 .header .header-logo {
   font-size: 35px;
@@ -151,7 +152,7 @@
 }
 .header nav .header-list li a {
   font-size: 20px;
-  color: #fff;
+  color: #2A4594;
   font-family: "Poppins", "Overpass";
   position: relative;
   padding-top: 10px;
@@ -279,7 +280,7 @@
   margin-top: 6px;
   font-size: 16px;
   font-family: "Poppins", "Overpass";
-  color: #fff;
+  color: #2A4594;
   opacity: 0.9;
 }
 .header nav .header-end-wrapper .header-make-call:hover {
@@ -312,7 +313,7 @@
 }
 .header nav .header-end-wrapper .header-languages-dropdown p {
   font-size: 17px;
-  color: #fff;
+  color: #2A4594;
   font-family: "Poppins", "Overpass";
 }
 .header nav .header-end-wrapper .header-languages-dropdown img {
@@ -322,7 +323,7 @@
 .header nav .header-end-wrapper .header-languages-dropdown .hld-dropdown-shown {
   position: absolute;
   width: 140px;
-  background-color: #181D27;
+  background-color: #fff;
   top: 60px;
   right: 0px;
   z-index: 226;
@@ -331,7 +332,7 @@
 }
 .header nav .header-end-wrapper .header-languages-dropdown .hld-dropdown-shown button {
   padding: 10px 15px;
-  background-color: #181D27;
+  background-color: #fff;
   border: none;
   display: flex;
   align-items: center;
@@ -340,7 +341,7 @@
   cursor: pointer;
 }
 .header nav .header-end-wrapper .header-languages-dropdown .hld-dropdown-shown .hld-dropdown-russian {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
 }
 .header nav .header-end-wrapper .header-languages-dropdown .hld-dropdown-none {
   display: none;

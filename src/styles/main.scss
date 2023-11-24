@@ -254,12 +254,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #181D27;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 225;
+  -webkit-box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 
 
 
@@ -288,7 +291,7 @@
       li {
         a {
           font-size: 20px;
-          color: #fff;
+          color: #2A4594;
           font-family: "Poppins", "Overpass";
           position: relative;
           padding-top: 10px;
@@ -434,7 +437,7 @@
           margin-top: 6px;
           font-size: 16px;
           font-family: "Poppins", "Overpass";
-          color: #fff;
+          color: #2A4594;
           opacity: 0.9;
         }
 
@@ -474,7 +477,7 @@
 
         p {
           font-size: 17px;
-          color: #fff;
+          color: #2A4594;
           font-family: "Poppins", "Overpass";
         }
 
@@ -486,7 +489,7 @@
         .hld-dropdown-shown {
           position: absolute;
           width: 140px;
-          background-color: #181D27;
+          background-color: #fff;
           top: 60px;
           right: 0px;
           z-index: 226;
@@ -496,7 +499,7 @@
 
           button {
             padding: 10px 15px;
-            background-color: #181D27;
+            background-color: #fff;
             border: none;
             display: flex;
             align-items: center;
@@ -506,7 +509,7 @@
           }
 
           .hld-dropdown-russian {
-            border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.7);
           }
         }
 
