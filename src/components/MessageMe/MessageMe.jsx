@@ -18,7 +18,7 @@ const MessageMe = () => {
         }
       >
         <div className="mmc-profile">
-          <img src="/public/mainlogo.png" alt="" />
+          <img src="/mainlogo.png" alt="" />
           <div className="mmc-profile-info">
             <p>1Fin jamoasi</p>
             <span>Tashkent</span>
