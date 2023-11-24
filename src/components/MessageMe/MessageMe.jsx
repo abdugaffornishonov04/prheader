@@ -10,7 +10,13 @@ const MessageMe = () => {
   return (
     <div className="message-me-wrapper">
       <button onClick={handleOpenChat} className="message-me-button">
-        <img src={openChat ? "/closechat.png" : "/openchat.png"} alt="" />
+        <img
+          className={
+            openChat ? "message-me-btn-closer" : "message-me-btn-opener"
+          }
+          src={openChat ? "/closechat3.png" : "/openchat.png"}
+          alt=""
+        />
       </button>
       <div
         className={
@@ -20,7 +26,7 @@ const MessageMe = () => {
         <div className="mmc-profile">
           <img src="/mainlogo.png" alt="" />
           <div className="mmc-profile-info">
-            <p>1Fin jamoasi</p>
+            <p>1Fin</p>
             <span>Tashkent</span>
           </div>
         </div>

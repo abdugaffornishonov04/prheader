@@ -13,6 +13,15 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
+
+    .message-me-btn-opener {
+      width: 35px;
+      height: 35px;
+    }
+    .message-me-btn-closer {
+      width: 25px;
+      height: 25px;
+    }
   }
 
   .message-me-content-true {
@@ -22,6 +31,7 @@
     background-color: #181D27;
     bottom: 95px;
     right: 54px;
+    border-radius: 10px;
 
     .mmc-profile {
       background-color: #1f2739;
@@ -29,6 +39,7 @@
       align-items: center;
       gap: 10px;
       padding: 10px;
+      border-radius: 10px 10px 0px 0px;
 
       img {
         width: 60px;
