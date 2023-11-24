@@ -148,7 +148,7 @@ const Header = () => {
                   onClick={changeLanguageRussian}
                   className="hld-dropdown-russian"
                 >
-                  <p>Russian</p>
+                  <p>Русский</p>
                   <img src="/russia.png" alt="" />
                 </button>
                 <button
