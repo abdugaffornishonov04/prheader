@@ -76,6 +76,7 @@
   padding: 10px;
   border-radius: 10px 10px 10px 10px;
   position: relative;
+  cursor: pointer;
 }
 .message-me-wrapper .message-me-content-true .mmc-messages-in .mmcmi-first-message p {
   color: #fff;
@@ -90,6 +91,7 @@
   padding: 10px;
   border-radius: 10px 10px 10px 10px;
   position: relative;
+  cursor: pointer;
 }
 .message-me-wrapper .message-me-content-true .mmc-messages-in .mmcmi-second-message p {
   color: #fff;

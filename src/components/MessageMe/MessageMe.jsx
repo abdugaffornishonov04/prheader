@@ -4,8 +4,8 @@ const MessageMe = () => {
   const [openChat, setOpenChat] = useState(false);
 
   const handleOpenChat = () => {
-    setOpenChat((isTrue) => !isTrue)
-  }
+    setOpenChat((isTrue) => !isTrue);
+  };
 
   return (
     <div className="message-me-wrapper">
@@ -18,9 +18,9 @@ const MessageMe = () => {
         }
       >
         <div className="mmc-profile">
-          <img src="/mainperson.png" alt="" />
+          <img src="/public/mainlogo.png" alt="" />
           <div className="mmc-profile-info">
-            <p>Jamshidbek Kobulov</p>
+            <p>1Fin jamoasi</p>
             <span>Tashkent</span>
           </div>
         </div>
