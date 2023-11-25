@@ -25,7 +25,7 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-        <img src="/public/hero-carousel-img-2.png" alt="" />  
+        <img src="/hero-carousel-img-2.png" alt="" />  
         </SwiperSlide>
         <SwiperSlide>
         <img src="/public/hero-carousel-img-2.png" alt="" />  
