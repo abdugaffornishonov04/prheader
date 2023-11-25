@@ -5,264 +5,39 @@
 
 @import "./hero";
 @import "./messageMe";
+@import "./carouselExample";
 
-//  MY OWN STYLES FOR HEADER
+// colors
 // #08f9ff
-// main color #2A4594
-// header color #181D27
-
-// .header {
-//   padding-left: 20px;
-//   padding-right: 20px;
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   background-color: #000;
+// main color 1) #2A4594 2) #fff
+// header color 1) #181D27 2) #2A4594
 
 
+// variables
 
-//   .header-logo {
-//     font-size: 35px;
-//     color: #fff;
-//   }
+$backgroundColor: #fff;
+$textColor: #181D27;
 
-//   nav {
-//     display: flex;
-//     align-items: center;
-
-//     .header-list {
-//       display: flex;
-//       align-items: center;
-//       gap: 25px;
-
-//       @media(max-width:900px) {
-//         display: none;
-//       }
-
-//       li {
-//         a {
-//           font-size: 20px;
-//           color: #fff;
-//           font-family: "Overpass";
-//           position: relative;
-
-//           &::after {
-//             content: "";
-//             width: 0%;
-//             background-color: #fff;
-//             height: 3px;
-//             position: absolute;
-//             bottom: -3px;
-//             left: 0;
-//             transition: 0.5s ease-in-out;
-//           }
-
-//           &:hover::after {
-//             width: 100%;
-//           }
-//         }
-//       }
-//     }
-
-//     .header-list-on-responsive {
-//       display: flex;
-//       position: fixed;
-//       background-color: #000;
-//       width: 80%;
-//       height: 100vh;
-//       top: 0;
-//       right: 20%;
-
-//       @media(max-width:900px) {
-//         display: flex;
-//       }
-
-//       .hor-wrapper {
-//         position: relative;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         justify-content: center;
-//         width: 100%;
-//         gap: 22px;
-
-//         li {
-//           transition: 0.6s;
-
-//           &:hover {
-//             transform: scale(1.2);
-//           }
-
-//           a {
-//             font-size: 20px;
-//             color: #fff;
-//             font-family: "Overpass";
-//           }
-//         }
-
-//         .header-make-call {
-//           display: flex;
-//           align-items: center;
-//           color: #fff;
-//           font-family: "Overpass";
-//           font-size: 20px;
-//           gap: 15px;
-
-//           img {
-//             height: 32px;
-//           }
-//         }
-
-//         .header-languages-dropdown {
-//           display: flex;
-//           align-items: center;
-//           color: #fff;
-//           font-family: "Overpass";
-//           font-size: 20px;
-//           gap: 15px;
-
-//           button {
-//             background-color: transparent;
-//             border: none;
-//             cursor: pointer;
-
-//             img {
-//               height: 30px;
-//             }
-//           }
-//         }
-
-//         .hor-close-button {
-//           position: absolute;
-//           right: 10px;
-//           top: 10px;
-//           background-color: transparent;
-//           border: none;
-//           cursor: pointer;
-
-//           img {
-//             width: 20px;
-//             height: 20px;
-//           }
-//         }
-//       }
-//     }
-
-//     .header-end-wrapper {
-//       margin-left: 50px;
-//       display: flex;
-//       align-items: center;
-//       gap: 15px;
-
-//       @media(max-width:900px) {
-//         display: none;
-//       }
-
-//       .header-make-call {
-//         img {
-//           height: 32px;
-//         }
-//       }
-
-//       .header-languages-dropdown {
-//         button {
-//           background-color: transparent;
-//           border: none;
-//           cursor: pointer;
-
-//           img {
-//             height: 30px;
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   .header-hamburger {
-//     display: none;
-//     background-color: transparent;
-//     border: none;
-//     cursor: pointer;
-
-//     img {
-//       width: 30px;
-//       height: 30px;
-//     }
-
-//     @media(max-width:900px) {
-//       display: flex;
-//     }
-//   }
-// }
-
-// .header-list-on-responsive-false {
-//   display: none !important;
-// }
-
-// .loading-true {
-//   background-color: rgba(0, 0, 0, 0.7);
-//   width: 100%;
-//   height: 100vh;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   position: fixed;
-//   top: 0;
-//   z-index: 10001;
-
-//   img {
-//     // margin-top: 15%;
-//     width: 70px;
-//     height: 70px;
-//     animation: flipImage 2s ease-in-out infinite;
-//   }
-
-//   @keyframes flipImage {
-
-//     0%,
-//     100% {
-//       transform: scaleX(1);
-//     }
-
-//     33.33% {
-//       transform: scaleX(-1);
-//     }
-
-//     66.66% {
-//       transform: scaleX(1)
-//     }
-
-//     100% {
-//       transform: scaleX(-1);
-//     }
-//   }
-// }
-
-// .loading-false {
-//   display: none;
-// }
 
 // SECOND STYLES FOR HEADER
 
 .header {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding: 20px 20px 8px 20px;
+
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 225;
+
   -webkit-box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  background-color: $backgroundColor;
 
 
 
@@ -291,15 +66,14 @@
       li {
         a {
           font-size: 20px;
-          color: #2A4594;
+          color: $textColor;
           font-family: "Poppins", "Overpass";
-          position: relative;
-          padding-top: 10px;
-          padding-left: 15px;
-          padding-right: 15px;
-          padding-bottom: 7px;
 
+          position: relative;
+
+          padding: 10px 15px 7px 15px;
           border-bottom: 4px solid transparent;
+
           transition: 0.1s ease;
 
           &:hover {
@@ -310,13 +84,15 @@
           &::after {
             content: "";
             width: 100%;
-            background: linear-gradient(0deg, #08f9ff33, transparent);
             height: 150%;
+
             position: absolute;
             bottom: -5px;
             left: 0;
             transition: 0.5s ease-in-out;
+
             display: none;
+            background: linear-gradient(0deg, #08f9ff33, transparent);
           }
 
           &:hover::after {
@@ -328,11 +104,13 @@
     }
 
     .header-list-on-responsive {
-      display: flex;
-      position: fixed;
-      background-color: #000;
       width: 80%;
       height: 100vh;
+
+      display: flex;
+      background-color: #000;
+
+      position: fixed;
       top: 0;
       right: 20%;
 
@@ -341,13 +119,15 @@
       }
 
       .hor-wrapper {
-        position: relative;
+        width: 100%;
+
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        width: 100%;
+        align-items: center;
         gap: 22px;
+
+        position: relative;
 
         li {
           transition: 0.6s;
@@ -366,10 +146,11 @@
         .header-make-call {
           display: flex;
           align-items: center;
+          gap: 15px;
+
           color: #fff;
           font-family: "Poppins";
           font-size: 20px;
-          gap: 15px;
 
           img {
             height: 32px;
@@ -379,14 +160,16 @@
         .header-languages-dropdown {
           display: flex;
           align-items: center;
+          gap: 15px;
+
           color: #fff;
           font-family: "Poppins";
           font-size: 20px;
-          gap: 15px;
 
           button {
             background-color: transparent;
             border: none;
+
             cursor: pointer;
 
             img {
@@ -396,11 +179,13 @@
         }
 
         .hor-close-button {
+          background-color: transparent;
+          border: none;
+
           position: absolute;
           right: 10px;
           top: 10px;
-          background-color: transparent;
-          border: none;
+
           cursor: pointer;
 
           img {
@@ -413,6 +198,7 @@
 
     .header-end-wrapper {
       margin-left: 50px;
+
       display: flex;
       align-items: center;
       gap: 10px;
@@ -422,19 +208,23 @@
       }
 
       .header-make-call {
-        transition: 0.1s ease;
-        position: relative;
         padding-right: 4px;
         padding-left: 4px;
         padding-bottom: 8px;
+
         display: flex;
         align-items: center;
-        border-bottom: 4px solid transparent;
-        transition: 0.4s ease-in-out;
         gap: 10px;
+
+        position: relative;
+        transition: 0.1s ease;
+        transition: 0.4s ease-in-out;
+
+        border-bottom: 4px solid transparent;
 
         p {
           margin-top: 6px;
+
           font-size: 16px;
           font-family: "Poppins", "Overpass";
           color: #2A4594;
@@ -454,6 +244,7 @@
           position: absolute;
           bottom: -5px;
           left: 0;
+
           transition: 0.9s ease-in-out;
         }
 
@@ -463,13 +254,15 @@
       }
 
       .header-languages-dropdown {
-        transition: 0.1s ease;
-        position: relative;
         padding-right: 4px;
         padding-left: 4px;
         padding-bottom: 5px;
-        cursor: pointer;
         border-bottom: 4px solid transparent;
+
+        position: relative;
+        transition: 0.1s ease;
+
+        cursor: pointer;
 
         display: flex;
         align-items: center;
@@ -487,24 +280,28 @@
         }
 
         .hld-dropdown-shown {
-          position: absolute;
           width: 140px;
+
+          display: flex;
+          flex-direction: column;
           background-color: #fff;
+
+          position: absolute;
           top: 60px;
           right: 0px;
           z-index: 226;
 
-          display: flex;
-          flex-direction: column;
 
           button {
             padding: 10px 15px;
-            background-color: #fff;
-            border: none;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 5px;
+            background-color: #fff;
+            border: none;
+
             cursor: pointer;
           }
 
@@ -525,6 +322,7 @@
     display: none;
     background-color: transparent;
     border: none;
+
     cursor: pointer;
 
     img {
@@ -543,12 +341,14 @@
 }
 
 .loading-true {
-  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+
   position: fixed;
   top: 0;
   z-index: 230;

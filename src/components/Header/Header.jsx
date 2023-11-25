@@ -22,6 +22,7 @@ const Header = () => {
       setIsLoading(false);
     }, 2000);
   };
+
   const changeLanguageUzbek = () => {
     setIsLoading(true);
     setTimeout(() => {
@@ -179,7 +180,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// image direction changed
-// on my way to make languages select
-// header dropdown fixed
