@@ -10,10 +10,10 @@ function App() {
     <Fragment>
       <Header />
       <HeroSection />
-      <div className="container">
-        {/* <CarouselExample /> */}
-        <CustomMicrosoft/>
-      </div>
+      {/* <div className="container"> */}
+      {/* <CarouselExample /> */}
+      <CustomMicrosoft />
+      {/* </div> */}
       <p>lorem1000</p>
       <MessageMe />
     </Fragment>
