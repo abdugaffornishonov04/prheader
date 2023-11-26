@@ -2,7 +2,8 @@ import { Fragment } from "react";
 import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
 import MessageMe from "./components/MessageMe/MessageMe";
-import CarouselExample from "./components/Carousel/CarouselExample";
+// import CarouselExample from "./components/Carousel/CarouselExample";
+import CustomMicrosoft from "./components/Carousel/CustomMicrosoft";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Header />
       <HeroSection />
       <div className="container">
-        <CarouselExample />
+        {/* <CarouselExample /> */}
+        <CustomMicrosoft/>
       </div>
       <p>lorem1000</p>
       <MessageMe />
