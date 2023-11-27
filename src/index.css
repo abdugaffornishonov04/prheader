@@ -6,13 +6,13 @@
   list-style: none;
 }
 
-body{
-  background-color:#fff;
-  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial,;
+body {
+  background-color: #1f1f1f;
+  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, ;
 }
 
-.container{
+.container {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 0 20px;  
+  padding: 0 20px;
 }

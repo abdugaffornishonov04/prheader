@@ -1,50 +1,4 @@
-// import { useState } from "react";
-// import { HEROIMGDATA } from "../../data/heroCarouselData";
-
-// const CustomMicrosoft = () => {
-//     const [imgIndex, setImgIndex] = useState(1); // Start with img2
-
-//     const carouselPrev = () => {
-//       setImgIndex((prevIndex) =>
-//         prevIndex === 0 ? HEROIMGDATA.length - 1 : prevIndex - 1
-//       );
-//     };
-
-//     const carouselNext = () => {
-//       setImgIndex((prevIndex) =>
-//         prevIndex === HEROIMGDATA.length - 1 ? 0 : prevIndex + 1
-//       );
-//     };
-
-//   return (
-//     <div className="microsoft-carousel">
-//       <button onClick={carouselPrev} className="mcc-left">
-//         {"<"}
-//       </button>
-//       <button onClick={carouselNext} className="mcc-right">
-//         {">"}
-//       </button>
-//       <div className="mcc-dots">
-        
-//       </div>
-//       <div className="mcc-wrapper">
-//         <div className="mcc-img1">
-//           <img src={img1} alt="" />
-//         </div>
-//         <div className="mcc-img2">
-//           <img src={img2} alt="" />
-//         </div>
-//         <div className="mcc-img3">
-//           <img src={img3} alt="" />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default CustomMicrosoft;
-
-import  { useState } from "react";
+import { useState } from "react";
 import { HEROIMGDATA } from "../../data/heroCarouselData";
 
 const CustomMicrosoft = () => {
@@ -70,10 +24,10 @@ const CustomMicrosoft = () => {
   return (
     <div className="microsoft-carousel">
       <button onClick={carouselPrev} className="mcc-left">
-        {"<"}
+        <img src="/public/icons8-previous-50.png" alt="" />
       </button>
       <button onClick={carouselNext} className="mcc-right">
-        {">"}
+        <img src="/public/icons8-previous-50.png" alt="" />
       </button>
       <div className="mcc-dots">
         <button className="mcc-dot"></button>
