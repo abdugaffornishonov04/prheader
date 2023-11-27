@@ -158,7 +158,6 @@
   height: 600px;
 }
 .microsoft-carousel .mcc-left {
-  background-color: red;
   position: absolute;
   left: 10%;
   top: 35%;
@@ -167,9 +166,12 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+  background-color: transparent;
+}
+.microsoft-carousel .mcc-left img {
+  width: 100%;
 }
 .microsoft-carousel .mcc-right {
-  background-color: red;
   position: absolute;
   right: 10%;
   top: 35%;
@@ -178,10 +180,15 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+  background-color: transparent;
+  transform: rotate(180deg);
+}
+.microsoft-carousel .mcc-right img {
+  width: 100%;
 }
 .microsoft-carousel .mcc-dots {
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   left: 0;
   right: 0;
   display: flex;
@@ -192,7 +199,7 @@
 .microsoft-carousel .mcc-dots .mcc-dot {
   width: 10px;
   height: 10px;
-  background-color: #000;
+  background-color: #fff;
   border-radius: 50%;
   border: none;
 }
@@ -207,14 +214,14 @@
   height: 450px;
   top: 3%;
   z-index: 201;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 .microsoft-carousel .mcc-wrapper .mcc-img1 img {
   width: 100%;
   height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 .microsoft-carousel .mcc-wrapper .mcc-img2 {
   width: 1000px;
@@ -224,17 +231,15 @@
   transform: translate(-50%, -50%);
   z-index: 202;
   height: 550px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 30px;
+  box-shadow: 0px 0px 23px 0px rgba(255, 255, 255, 0.2);
 }
 .microsoft-carousel .mcc-wrapper .mcc-img2 img {
   width: 100%;
   height: 550px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 .microsoft-carousel .mcc-wrapper .mcc-img3 {
   width: 500px;
@@ -243,14 +248,14 @@
   right: 0;
   top: 3%;
   z-index: 201;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 .microsoft-carousel .mcc-wrapper .mcc-img3 img {
   width: 100%;
   height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .header {
@@ -264,11 +269,10 @@
   top: 0;
   z-index: 225;
   box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  background-color: #1F1F1F;
 }
 .header .header-logo {
   font-size: 35px;
-  color: #fff;
 }
 .header .header-logo img {
   width: 60px;
@@ -289,7 +293,7 @@
 }
 .header nav .header-list li a {
   font-size: 20px;
-  color: #181D27;
+  color: #fff;
   font-family: "Poppins", "Overpass";
   position: relative;
   padding: 10px 15px 7px 15px;
@@ -318,7 +322,7 @@
   width: 80%;
   height: 100vh;
   display: flex;
-  background-color: #000;
+  background-color: #1f1f1f;
   position: fixed;
   top: 0;
   right: 20%;
@@ -414,7 +418,7 @@
   margin-top: 6px;
   font-size: 16px;
   font-family: "Poppins", "Overpass";
-  color: #2A4594;
+  color: #fff;
   opacity: 0.9;
 }
 .header nav .header-end-wrapper .header-make-call:hover {
@@ -447,7 +451,7 @@
 }
 .header nav .header-end-wrapper .header-languages-dropdown p {
   font-size: 17px;
-  color: #2A4594;
+  color: #fff;
   font-family: "Poppins", "Overpass";
 }
 .header nav .header-end-wrapper .header-languages-dropdown img {
@@ -458,7 +462,7 @@
   width: 140px;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #1F1F1F;
   position: absolute;
   top: 60px;
   right: 0px;
@@ -470,7 +474,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 5px;
-  background-color: #fff;
+  background-color: #1F1F1F;
   border: none;
   cursor: pointer;
 }

@@ -24,10 +24,10 @@ const CustomMicrosoft = () => {
   return (
     <div className="microsoft-carousel">
       <button onClick={carouselPrev} className="mcc-left">
-        <img src="/public/icons8-previous-50.png" alt="" />
+        <img src="/icons8-previous-50.png" alt="" />
       </button>
       <button onClick={carouselNext} className="mcc-right">
-        <img src="/public/icons8-previous-50.png" alt="" />
+        <img src="/icons8-previous-50.png" alt="" />
       </button>
       <div className="mcc-dots">
         <button className="mcc-dot"></button>
