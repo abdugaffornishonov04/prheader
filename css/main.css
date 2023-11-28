@@ -156,6 +156,8 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 600px;
 }
 .microsoft-carousel .mcc-left {
@@ -168,7 +170,7 @@
   border: none;
   width: 40px;
   height: 40px;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 .microsoft-carousel .mcc-left img {
   width: 100%;
@@ -183,7 +185,7 @@
   border: none;
   width: 40px;
   height: 40px;
-  cursor: pointer;
+  cursor: pointer !important;
   transform: rotate(180deg);
 }
 .microsoft-carousel .mcc-right img {
@@ -198,13 +200,24 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  cursor: pointer !important;
+  z-index: 205;
 }
 .microsoft-carousel .mcc-dots .mcc-dot {
+  cursor: pointer !important;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.microsoft-carousel .mcc-dots .mcc-dot-active {
+  cursor: pointer !important;
   width: 10px;
   height: 10px;
   background-color: #fff;
   border-radius: 50%;
-  border: none;
+  border: 1px solid transparent;
 }
 .microsoft-carousel .mcc-wrapper {
   position: relative;
@@ -250,6 +263,8 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
+  -o-object-position: center;
+     object-position: center;
 }
 .microsoft-carousel .mcc-wrapper .mcc-img3 {
   width: 500px;
@@ -272,6 +287,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
+}
+
+.mcc-img2 .active {
+  border: 2px solid red !important;
+  /* Add any other styles for the active image here */
 }
 
 .header {

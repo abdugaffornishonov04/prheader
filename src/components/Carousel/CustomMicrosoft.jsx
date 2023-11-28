@@ -2,7 +2,8 @@ import { useState } from "react";
 import { HEROIMGDATA } from "../../data/heroCarouselData";
 
 const CustomMicrosoft = () => {
-  const [imgIndex, setImgIndex] = useState(1); // Start with img2
+  const [activeCarousel, setActiveCarousel] = useState();
+  const [imgIndex, setImgIndex] = useState(1);
 
   const carouselPrev = () => {
     setImgIndex((prevIndex) =>
@@ -36,7 +37,7 @@ const CustomMicrosoft = () => {
         {/* <button className="mcc-dot"></button>
         <button className="mcc-dot"></button>
         <button className="mcc-dot"></button>
-        <button className="mcc-dot"></button> */}
+        <button className="mcc-dot mcc-dot-active"></button> */}
       </div>
       <div className="mcc-wrapper">
         <div className="mcc-img1">
