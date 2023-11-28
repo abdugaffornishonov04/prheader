@@ -1,5 +1,7 @@
 export const HEROIMGDATA = [
-  "https://png.pngtree.com/thumb_back/fh260/background/20210929/pngtree-glassmorphism-wave-effect-abstract-background-image_908575.png",
-  "https://i.pinimg.com/736x/b7/08/53/b70853405123116e827cbbd38934395e.jpg",
-  "https://media.istockphoto.com/id/1410785342/photo/blurred-tropic-leaves-behind-frosted-glass-glassmorphism-tropical-leaf-background-3d.webp?b=1&s=170667a&w=0&k=20&c=BtKxHjJ-jH2LoAZ6IqE0HvvY4gU25vsHkZ-y95yPZh4=",
-]
+  "https://telegra.ph/file/193578fba6840d2c05d79.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFKxdXKHpyW5iGYyM7CQkLg4mRVprvEWB0KA&usqp=CAU",
+  "https://www.mfaktor.uz/_next/static/media/client10.5f2fc496.svg",
+  "https://media.wired.com/photos/595456445578bd7594c45b03/master/pass/rocky-mountaineer.jpg",
+  "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_640.jpg"
+] 

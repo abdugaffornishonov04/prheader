@@ -30,10 +30,13 @@ const CustomMicrosoft = () => {
         <img src="/icons8-previous-50.png" alt="" />
       </button>
       <div className="mcc-dots">
+        {HEROIMGDATA.map((el, i) => (
+          <button key={i} className="mcc-dot"></button>
+        ))}
+        {/* <button className="mcc-dot"></button>
         <button className="mcc-dot"></button>
         <button className="mcc-dot"></button>
-        <button className="mcc-dot"></button>
-        <button className="mcc-dot"></button>
+        <button className="mcc-dot"></button> */}
       </div>
       <div className="mcc-wrapper">
         <div className="mcc-img1">

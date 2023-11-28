@@ -120,7 +120,7 @@ const Header = () => {
                     alt=""
                   />
                 </button>
-                {language ? "Языки" : "Tillar"}
+                {language ? "Языки" : "Til"}
               </div>
 
               <button onClick={closeHeaderResList} className="hor-close-button">

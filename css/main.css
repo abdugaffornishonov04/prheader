@@ -151,9 +151,10 @@
 }
 
 .microsoft-carousel {
+  max-width: 1400px;
   margin-top: 170px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   height: 600px;
 }
@@ -161,12 +162,13 @@
   position: absolute;
   left: 10%;
   top: 35%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
   z-index: 203;
   border: none;
   width: 40px;
   height: 40px;
   cursor: pointer;
-  background-color: transparent;
 }
 .microsoft-carousel .mcc-left img {
   width: 100%;
@@ -175,12 +177,13 @@
   position: absolute;
   right: 10%;
   top: 35%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
   z-index: 203;
   border: none;
   width: 40px;
   height: 40px;
   cursor: pointer;
-  background-color: transparent;
   transform: rotate(180deg);
 }
 .microsoft-carousel .mcc-right img {
@@ -215,6 +218,12 @@
   top: 3%;
   z-index: 201;
   border-radius: 30px;
+  opacity: 0.5;
+}
+@media (max-width: 600px) {
+  .microsoft-carousel .mcc-wrapper .mcc-img1 {
+    display: none;
+  }
 }
 .microsoft-carousel .mcc-wrapper .mcc-img1 img {
   width: 100%;
@@ -224,7 +233,8 @@
   border-radius: 30px;
 }
 .microsoft-carousel .mcc-wrapper .mcc-img2 {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   position: absolute;
   left: 50%;
   top: 40%;
@@ -249,6 +259,12 @@
   top: 3%;
   z-index: 201;
   border-radius: 30px;
+  opacity: 0.5;
+}
+@media (max-width: 600px) {
+  .microsoft-carousel .mcc-wrapper .mcc-img3 {
+    display: none;
+  }
 }
 .microsoft-carousel .mcc-wrapper .mcc-img3 img {
   width: 100%;
