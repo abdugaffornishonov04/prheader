@@ -14,7 +14,7 @@ const MessageMe = () => {
           className={ 
             openChat ? "message-me-btn-closer" : "message-me-btn-opener"
           }
-          src={openChat ? "/closechat3.png" : "/openchat.png"}
+          src={openChat ? "/closechat3.png" : "/public/icons8-chat-48.png"}
           alt=""
         />
       </button>

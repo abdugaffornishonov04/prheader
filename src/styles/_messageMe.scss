@@ -34,6 +34,12 @@
     right: 54px;
     border-radius: 10px;
 
+    @media(max-width:461px) {
+      right: 10px !important;
+      left: 10px !important;
+      width: 320px;
+    }
+
     .mmc-profile {
       background-color: #1f2739;
       display: flex;
@@ -128,3 +134,5 @@
 .message-me-content-false {
   display: none;
 }
+
+// some major adjustments done in 1 2 3 4 5
