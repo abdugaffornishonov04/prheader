@@ -222,6 +222,8 @@
 .microsoft-carousel .mcc-wrapper {
   position: relative;
   height: 100%;
+  transition: opacity 1s ease;
+  transition: transform 0.5s ease;
 }
 .microsoft-carousel .mcc-wrapper .mcc-img1 {
   width: 500px;

@@ -1,7 +1,7 @@
 export const HEROIMGDATA = [
-  "https://telegra.ph/file/193578fba6840d2c05d79.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFKxdXKHpyW5iGYyM7CQkLg4mRVprvEWB0KA&usqp=CAU",
-  "https://www.mfaktor.uz/_next/static/media/client10.5f2fc496.svg",
-  "https://media.wired.com/photos/595456445578bd7594c45b03/master/pass/rocky-mountaineer.jpg",
-  "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_640.jpg"
+  "https://e1.pxfuel.com/desktop-wallpaper/854/401/desktop-wallpaper-latest-forest-river-nature-u-16k-16k.jpg",
+  "https://pbs.twimg.com/media/DjaSmNWXgAAHUkR.jpg:large",
+  "https://e0.pxfuel.com/wallpapers/83/635/desktop-wallpaper-u-16k-ultra-nature.jpg",
+  "https://www.creativefabrica.com/wp-content/uploads/2022/10/08/Ai-Autumn-Jungle-Illustration-Paint-Landscape-On-River-In-Cyber-40695814-1.png",
+  "https://w0.peakpx.com/wallpaper/54/741/HD-wallpaper-waterfall-nature-nature-waterfall-thumbnail.jpg"
 ] 
