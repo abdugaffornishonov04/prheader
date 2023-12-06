@@ -235,17 +235,17 @@ $textColor: #fff;
         }
 
 
-        &:hover::after {
-          content: "";
-          width: 100%;
-          background: linear-gradient(0deg, #08f9ff33, transparent);
-          height: 150%;
-          position: absolute;
-          bottom: -5px;
-          left: 0;
+        // &:hover::after {
+        //   content: "";
+        //   width: 100%;
+        //   background: linear-gradient(0deg, #08f9ff33, transparent);
+        //   height: 150%;
+        //   position: absolute;
+        //   bottom: -5px;
+        //   left: 0;
 
-          transition: 0.9s ease-in-out;
-        }
+        //   transition: 0.9s ease-in-out;
+        // }
 
         img {
           height: 32px;

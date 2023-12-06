@@ -11,7 +11,7 @@ const MessageMe = () => {
     <div className="message-me-wrapper">
       <button onClick={handleOpenChat} className="message-me-button">
         <img
-          className={ 
+          className={
             openChat ? "message-me-btn-closer" : "message-me-btn-opener"
           }
           src={openChat ? "/closechat3.png" : "/public/icons8-chat-48.png"}
